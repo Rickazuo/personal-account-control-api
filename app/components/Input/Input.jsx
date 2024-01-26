@@ -1,22 +1,22 @@
 import styles from "./input.module.css";
 
-const Input = ({
+export default function Input({
   id,
   value,
   onChange,
+  type,
   placeholder,
-  type = "text",
   ...props
-} = {}) => (
-  <input
-    id={id}
-    className={`${styles.input}`}
-    type={type}
-    value={value}
-    onChange={onChange}
-    placeholder={placeholder}
-    {...props}
-  />
-);
-
-export default Input;
+}) {
+  return (
+    <input
+      id={id}
+      className={`${styles.input}`}
+      type={type}
+      value={value}
+      onChange={onChange}
+      placeholder={placeholder}
+      {...props}
+    />
+  );
+}

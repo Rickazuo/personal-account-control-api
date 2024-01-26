@@ -1,0 +1,68 @@
+.main {
+  background-color: #f0f8ff;
+  max-height: 50rem;
+  max-width: 72rem;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+}
+
+.main::-webkit-scrollbar {
+  width: 12px;
+}
+
+.main::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 6px;
+}
+
+.main::-webkit-scrollbar-thumb {
+  background: #cee5fa;
+  border-radius: 6px;
+}
+
+.main::-webkit-scrollbar-thumb:hover {
+  background: #b9dbfa;
+}
+
+.containerSearch {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.containerResults {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #e5f0fa;
+  box-shadow: 0 0 20px #e5f0fa;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+.containerResultsPerson {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.name {
+  font-size: x-large;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.phones {
+  font-size: large;
+  font-weight: 600;
+}
+
+.phoneType {
+  font-weight: 700;
+}

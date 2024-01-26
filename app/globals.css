@@ -9,4 +9,5 @@ body {
   background-color: #cf2e2ebf;
   display: flex;
   justify-content: center;
+  width: 100%;
 }
