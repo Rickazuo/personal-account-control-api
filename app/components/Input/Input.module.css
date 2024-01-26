@@ -1,0 +1,16 @@
+.input {
+  border: 4px solid #74030331;
+  border-radius: 2rem;
+  outline: none;
+  padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+  width: 100%;
+
+  font-weight: 500;
+  font-size: medium;
+}
+
+.input:hover,
+.input:focus {
+  outline: none;
+  border: 4px solid rgba(116, 3, 3, 0.452);
+}

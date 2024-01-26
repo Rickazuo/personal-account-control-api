@@ -8,9 +8,18 @@ export default function Header() {
     <main className={styles.main}>
       <header className={styles.header}>
         <Image src={logo} alt="logo of Lar" width={40} height={40} />
-        <a href="http://">Home</a>
-        <a href="http://">Colaboradores</a>
-        <a href="http://">Registros</a>
+        <a href="http://" className={styles.textHeader}>
+          Home
+        </a>
+        <a href="http://" className={styles.textHeader}>
+          Colaboradores
+        </a>
+        <a href="http://" className={styles.textHeader}>
+          Telefones
+        </a>
+        <a href="http://" className={styles.textHeader}>
+          Suporte
+        </a>
         <button className={styles.logOutButton}>
           <Image src={logOut} alt="logo of Lar" width={32} height={32} />
         </button>
