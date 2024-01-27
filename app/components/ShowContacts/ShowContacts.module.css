@@ -1,6 +1,6 @@
 .main {
   background-color: #f0f8ff;
-  max-height: 50rem;
+  max-height: 40rem;
   max-width: 72rem;
   width: 100%;
   padding: 2rem;
@@ -37,6 +37,7 @@
 }
 
 .containerResults {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -65,4 +66,42 @@
 
 .phoneType {
   font-weight: 700;
+}
+
+.error {
+  color: #000000;
+  background-color: #ffd2d2;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  border: 1px solid #d8000c;
+}
+
+.removeButton {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  right: 2%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.removeButton:hover {
+  filter: brightness(60%);
+  transform: scale(1.1);
+}
+
+@media screen and (max-height: 860px) {
+  .main {
+    max-height: 20rem;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .main {
+    margin: 0 0.5rem 0 0.5rem;
+  }
 }

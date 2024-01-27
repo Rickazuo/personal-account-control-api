@@ -89,3 +89,10 @@
 .phoneType {
   font-weight: 700;
 }
+
+@media screen and (max-width: 650px) {
+  .main {
+    max-height: 20rem;
+    margin: 0rem 0.5rem;
+  }
+}

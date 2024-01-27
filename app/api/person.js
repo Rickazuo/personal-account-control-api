@@ -18,3 +18,12 @@ export const getPersonByName = async (
       );
       return { data: response.data };
   };
+
+export const deletePersonById = async (
+    id
+    ) => {
+      const response = await axios.delete(
+        `${baseUrl}/Pessoas/${id}`
+      );
+      return  response;
+  };

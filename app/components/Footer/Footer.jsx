@@ -4,19 +4,29 @@ export default function Footer() {
   return (
     <main className={styles.main}>
       <div>
-        <a href="http://" className={styles.textHeader}>
-          Home
-        </a>
-        <a href="http://" className={styles.textHeader}>
-          Colaboradores
-        </a>
-        <a href="http://" className={styles.textHeader}>
-          Telefones
-        </a>
-        <a href="http://" className={styles.textHeader}>
-          Suporte
-        </a>
-        <button className={styles.logOutButton}></button>
+        <p className={styles.copyright}>
+          Copyright &copy; 2024, All Right Reserved{" "}
+          <a
+            className={styles.linkCopyright}
+            href="https://www.lar.ind.br/en/home-en/"
+            target="_blank"
+          >
+            Lar
+          </a>
+        </p>
+      </div>
+      <div>
+        <ul className={styles.footerNavigation}>
+          <li>
+            <a href="#">Terms</a>
+          </li>
+          <li>
+            <a href="#">Privacy</a>
+          </li>
+          <li>
+            <a href="#">Policy</a>
+          </li>
+        </ul>
       </div>
     </main>
   );

@@ -8,4 +8,47 @@
   position: absolute;
   bottom: 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.copyright {
+  font-size: medium;
+  font-weight: bold;
+}
+
+.linkCopyright {
+  text-decoration: none;
+  color: #cf2e2ebf;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.footerNavigation {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.footerNavigation :nth-child(n) {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 550px) {
+  .main {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .copyright {
+    font-size: small;
+  }
+
+  .footerNavigation {
+    font-size: small;
+  }
 }
