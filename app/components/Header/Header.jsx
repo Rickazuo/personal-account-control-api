@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Link from "next/link"; // Importe o componente Link
-import styles from "./header.module.css";
+import Link from "next/link";
+import styles from "./Header.module.css";
 import logo from "../../assets/logoLar.png";
 import logOut from "../../assets/logOut.png";
 
