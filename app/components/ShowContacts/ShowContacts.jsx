@@ -47,7 +47,7 @@ export default function ShowContacts() {
       <div className={styles.containerSearch}></div>
       {error && <div className={styles.error}>{error}</div>}
       {people?.map((person) => (
-        <div className={styles.containerResults}>
+        <div key={person.pessoaId} className={styles.containerResults}>
           <button
             className={styles.removeButton}
             type="button"
